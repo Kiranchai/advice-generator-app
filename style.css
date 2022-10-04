@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    color: var(--light-cyan);
+    font-family: 'Manrope', sans-serif;
+}
+
+.advice-container{
+    position: relative;
+    background-color: var(--dark-grayish-blue);
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 35rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+
+.advice-id{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    padding-bottom: 1rem;
+    color: var(--neon-green);
+}
+
+.advice-quote{
+    padding: 0 1rem;
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+.divider-picture{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.divider-container{
+    max-width: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.roll-advice-btn{
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    position:absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    background-color: var(--neon-green);
+    transition: all .2s ease-in-out;
+}
+
+.roll-advice-btn:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 52px -1px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 0px 52px -1px rgba(66, 68, 90, 1);
+box-shadow:  0px 0px 52px -5px var(--neon-green);
+}
